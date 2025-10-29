@@ -10,6 +10,17 @@ variable "company" {
   default     = "pulseagami"
 }
 
+variable "vpc_cidr_block" {
+  description = "CIDR block for the VPC"
+  type    = string
+}
+
+variable "environment" {
+  description = "Environment name (e.g., dev, staging, prod)"
+  default = "dev"
+  type    = string
+}
+
 variable "region" {
   description = "deployment region"
   type        = string
