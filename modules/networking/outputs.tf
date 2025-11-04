@@ -1,19 +1,36 @@
+# -------------------
+# VPC
+# -------------------
 output "vpc_id" {
-  description = "VPC ID"
+  description = "The ID of the VPC"
   value       = aws_vpc.main.id
 }
 
-output "public_web_subnet_ids" {
+# -------------------
+# Public Subnets
+# -------------------
+output "public_subnet_ids" {
   description = "List of public subnet IDs"
   value       = aws_subnet.public[*].id
 }
 
-output "public_web_sg_id" {
-  description = "Security group ID for EC2"
+# -------------------
+# Private Subnets
+# -------------------
+output "private_subnet_ids" {
+  description = "List of private subnet IDs"
+  value       = aws_subnet.private[*].id
+}
+
+# -------------------
+# Security Groups
+# -------------------
+output "ec2_sg_id" {
+  description = "Security Group ID for EC2 instances"
   value       = aws_security_group.ec2_sg.id
 }
 
-output "public_lb_sg_id" {
-  description = "Security group ID for Load Balancer"
+output "alb_sg_id" {
+  description = "Security Group ID for ALB"
   value       = aws_security_group.alb_sg.id
 }
