@@ -1,8 +1,8 @@
-name: Terraform Deploy - Dev
+name: Terraform Deploy
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "master" ]
 
 jobs:
   terraform:
