@@ -2,8 +2,7 @@ name: Terraform Deploy - Dev
 
 on:
   push:
-    branches:
-      - dev
+    branches: [ "dev" ]
 
 jobs:
   terraform:
