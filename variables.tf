@@ -12,7 +12,6 @@ variable "project_prefix" {
 
 variable "environment" {
   description = "Environment name (e.g., dev, staging, prod)"
-  default = "dev"
   type    = string
 }
 
