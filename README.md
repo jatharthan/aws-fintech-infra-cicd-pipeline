@@ -12,7 +12,7 @@ This document reflects the state *before integrating Helm charts and ArgoCD GitO
 74b7efe1cf65271b4c0757f8a085708f24705e8d
 ```
 
-This represents the stable state before transitioning to Helm and ArgoCD.
+This represents the stable state before transitioning to Helm and ArgoCD._
 
 ---
 
