@@ -3,6 +3,9 @@ name: Terraform Deploy
 on:
   push:
     branches: [ "master" ]
+    paths-ignore:
+      - 'README.md'
+      - '.github/workflows/*.yml'
 
 jobs:
   deploy-dev:
