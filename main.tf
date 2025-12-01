@@ -12,7 +12,7 @@ module "eks" {
   region         = var.region
   environment            = var.environment
   vpc_id                 = module.networking.vpc_id
-  cluster_name           = "pulseagami-eks"
+  cluster_name           = "pulseagami-eks-${var.environment}"
   private_subnet_ids     = module.networking.private_subnet_ids
   public_subnet_ids      = module.networking.public_subnet_ids
   node_security_group_ids = [module.networking.ec2_sg_id]  # EC2 SG from your VPC module
